@@ -2,7 +2,7 @@
   "name": "crypto-whale-tracker",
   "version": "1.0.0",
   "description": "Cryptocurrency whale tracking bot",
-  "main": "index.js",
+  "main": "minimal-server.js",
   "scripts": {
     "start": "node minimal-server.js",
     "bot": "node cloud-monitor.js",
