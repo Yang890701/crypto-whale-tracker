@@ -62,9 +62,20 @@ app.get('/api/test', async (req, res) => {
 // 根路由
 app.get('/', (req, res) => {
     res.send(`
-        <h1>🔍 Codex API 測試</h1>
-        <p>API Key: ${process.env.CODEX_API_KEY ? '已設置' : '未設置'}</p>
-        <a href="/api/test">測試 Codex API</a>
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Codex API 測試</title>
+            <style>body{font-family:Arial;padding:20px;}</style>
+        </head>
+        <body>
+            <h1>🔍 Codex API 測試</h1>
+            <p>✅ 服務器運行正常</p>
+            <p>🔑 API Key: ${process.env.CODEX_API_KEY ? '已設置' : '未設置'}</p>
+            <p>🌐 URL: ${req.get('host')}</p>
+            <a href="/api/test" style="background:#007bff;color:white;padding:10px;text-decoration:none;border-radius:5px;">測試 Codex API</a>
+        </body>
+        </html>
     `);
 });
 
