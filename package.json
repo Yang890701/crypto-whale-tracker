@@ -4,7 +4,7 @@
   "description": "Cryptocurrency whale tracking bot",
   "main": "index.js",
   "scripts": {
-    "start": "node codex-web-server.js",
+    "start": "node simple-codex-server.js",
     "bot": "node cloud-monitor.js",
     "telegram": "node start-defined-bot.js"
   },
@@ -15,7 +15,7 @@
     "express": "^4.21.2",
     "node-cron": "^3.0.3",
     "node-telegram-bot-api": "^0.64.0",
-    "puppeteer": "^21.11.0"
+
   },
   "engines": {
     "node": ">=18.0.0"

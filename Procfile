@@ -1,1 +1,1 @@
-web: node codex-web-server.js
+web: node simple-codex-server.js
