@@ -4,13 +4,9 @@
   "description": "Cryptocurrency whale tracking bot",
   "main": "index.js",
   "scripts": {
-    "start": "node cloud-monitor.js",
-    "cloud": "node cloud-monitor.js",
-    "local": "node start-defined-bot.js",
-    "web": "node web-server.js",
-    "test": "node test-defined-scraper.js",
-    "network-test": "node network-test.js",
-    "codex": "node codex-web-server.js"
+    "start": "node codex-web-server.js",
+    "bot": "node cloud-monitor.js",
+    "telegram": "node start-defined-bot.js"
   },
   "dependencies": {
     "axios": "^1.6.0",
